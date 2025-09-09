@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janjos Place and Resort - Paradise Getaway</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Escape to paradise at Janjos Place and Resort. Luxury accommodation in Calamba Laguna with stunning views and world-class amenities.">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo animate-fade-in">JANJOS PLACE AND RESORT</h1>
+            <div class="auth-buttons">
+                <button class="btn btn-hero" onclick="toggleModal('signin-modal')">LOGIN</button>
+                <button class="btn btn-hero" onclick="toggleModal('signup-modal')">SIGN UP</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sign Up Modal -->
+    <div id="signup-modal" class="modal">
+  <div class="modal-overlay" onclick="toggleModal('signup-modal')"></div>
+  <div class="modal-content animate-scale-in">
+    <button class="modal-close" onclick="toggleModal('signup-modal')">&times;</button>
+    <h3>Create Account</h3>
+
+   <form id="signupForm" class="auth-form">
+  <div class="form-group">
+    <label for="signup-name">Full Name</label>
+    <input type="text" id="signup-name" name="fullname" required>
+  </div>
+  <div class="form-group">
+    <label for="signup-email">Email</label>
+    <input type="email" id="signup-email" name="email" required>
+  </div>
+  <div class="form-group">
+    <label for="signup-password">Password</label>
+    <input type="password" id="signup-password" name="password" required>
+  </div>
+  <button type="submit" class="btn btn-resort btn-full">Sign Up</button>
+</form>
+
+
+
+
+
+  </div>
+</div>
+
+
+    <!-- Sign In Modal -->
+    <div id="signin-modal" class="modal">
+        <div class="modal-overlay" onclick="toggleModal('signin-modal')"></div>
+        <div class="modal-content animate-scale-in">
+            <button class="modal-close" onclick="toggleModal('signin-modal')">&times;</button>
+            <h3>Sign In</h3>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="signin-email">Email</label>
+                    <input type="email" id="signin-email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signin-password">Password</label>
+                    <input type="password" id="signin-password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn btn-resort btn-full">Sign In</button>
+                <p class="auth-switch">
+                    Don't have an account? 
+                    <a href="#" onclick="switchModal('signin-modal', 'signup-modal')">Sign Up</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text animate-fade-in-up">
+                <h1>Pick a date and enjoy<br><span class="text-accent">Janjos Place and Resort</span></h1>
+                <p>Blk 10 Lot 11, Indigo Bay Subd, Bagong Kalsada, Calamba Laguna</p>
+            </div>
+            <div class="booking-form animate-slide-in-right">
+                <div class="card">
+                    <h3>Janjos Place and Resort</h3>
+                    <form class="booking-form-content">
+                        <div class="form-group">
+                            <label for="checkin">Check-in</label>
+                            <input type="date" id="checkin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout">Check-out</label>
+                            <input type="date" id="checkout" required>
+                        </div>
+                        <button type="submit" class="btn btn-resort btn-full btn-lg">CHECK AVAILABILITY</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="section-intro animate-fade-in-up">
+  <div class="container">
+    <h2 class="section-title">Why Choose Janjos Place and Resort?</h2>
+    <p class="section-description">
+      Discover a place where comfort meets adventure. From luxury rooms and scenic pools to elegant dining, our resort offers unforgettable moments for couples, families, and friends alike.
+    </p>
+  </div>
+</section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="gallery-grid">
+            <div class="gallery-item animate-fade-in hover-lift">
+                <img src="rPic3.jpg" alt="Luxury Resort Room with Ocean View" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>Luxury Rooms</h4>
+                    <p>“Where style meets relaxation.”</p>
+                </div>
+            </div>
+            <div class="gallery-item animate-fade-in hover-lift" style="animation-delay: 0.2s">
+                <img src="rPic2.jpg" alt="Infinity Pool Overlooking Ocean" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>Lobby and Bar Area</h4>
+                    <p>“Where style meets relaxation.”</p>
+                </div>
+            </div>
+            <div class="gallery-item animate-fade-in hover-lift" style="animation-delay: 0.4s">
+                <img src="rPic1.jpg" alt="Elegant Resort Dining Area" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>Beautiful Pool</h4>
+                    <p>“Your escape starts here.”</p>
+                </div>  
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+    <!-- Resort Info Section -->
+    <section class="resort-info animate-fade-in">
+        <div class="container">
+            <h2>Escape to Paradise When you book a stay at our resort, you're not just reserving a room—<br><span class="text-accent">you're embracing an experience of pure relaxation and adventure.</span></h2>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+           <h2 class="section-title" style="text-align: center; color: #0A74DA;">Pricing</h2>
+
+
+
+            <!-- Season Toggle -->
+            <div class="season-toggle animate-fade-in">
+                <button id="btn-off-peak" class="season-btn active" onclick="switchSeason('off-peak')">
+                    Off-Peak Season
+                </button>
+                <button id="btn-peak" class="season-btn" onclick="switchSeason('peak')">
+                    Peak Season
+                </button>
+            </div>
+
+            <!-- Off-Peak Pricing -->
+            <div id="off-peak" class="season-content active animate-fade-in">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Off Peak Season</h3>
+                    </div>
+                    <div class="pricing-content">
+                        <div class="pricing-period">
+                            <h4>Monday to Thursday</h4>
+                            <p class="capacity">4 Rooms, Maximum sleeping capacity – 30 pax</p>
+                            <ul class="pricing-list">
+                                <li><span class="bullet"></span>9 Hrs Day Session (8am to 5pm) – ₱8,000</li>
+                                <li><span class="bullet"></span>11 Hrs Night Session (7pm to 6am) – ₱10,000</li>
+                                <li><span class="bullet"></span>22 Hrs Overnight Session (7pm to 5pm) – ₱16,000</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-period">
+                            <h4>Friday to Sunday</h4>
+                            <p class="capacity">4 Rooms, Maximum sleeping capacity – 30 pax</p>
+                            <ul class="pricing-list">
+                                <li><span class="bullet"></span>22 Hrs Overnight Session (7pm to 5pm) – ₱18,000</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Peak Pricing -->
+            <div id="peak" class="season-content animate-fade-in">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Peak Season</h3>
+                        <p class="pricing-subtitle">(March 15 – June 15 & December 10 – January 10)</p>
+                    </div>
+                    <div class="pricing-content">
+                        <div class="pricing-period">
+                            <h4>Monday to Thursday</h4>
+                            <p class="capacity">4 Rooms, Maximum sleeping capacity – 30 pax</p>
+                            <ul class="pricing-list">
+                                <li><span class="bullet"></span>9 Hrs Day Session (8am to 5pm) – ₱12,000</li>
+                                <li><span class="bullet"></span>11 Hrs Night Session (7pm to 6am) – ₱15,000</li>
+                                <li><span class="bullet"></span>22 Hrs Overnight Session (7pm to 5pm) – ₱22,000</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-period">
+                            <h4>Friday to Sunday</h4>
+                            <p class="capacity">4 Rooms, Maximum sleeping capacity – 30 pax</p>
+                            <ul class="pricing-list">
+                                <li><span class="bullet"></span>22 Hrs Overnight Session (7pm to 5pm) – ₱25,000</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+<!-- Guest Testimonials + Get in Touch -->
+<section class="testimonials-contact-section animate-fade-in-up">
+  <div class="container flex-wrap">
+    <!-- Testimonials -->
+    <div class="testimonials-card">
+      <h2 class="section-title">What Our Guests Say</h2>
+      <div class="testimonial-card-slider">
+        <div class="testimonial-card active">
+          <p>"Absolutely stunning! The place was spotless, staff were so friendly, and the pool at night — magical!"</p>
+          <div class="testimonial-author">
+            <strong>Maria S.</strong><br>
+            <span>Stayed in April 2024</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p>"Perfect weekend escape. The food was amazing and the ambiance was incredibly relaxing."</p>
+          <div class="testimonial-author">
+            <strong>John R.</strong><br>
+            <span>Stayed in February 2024</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p>"We celebrated our anniversary here and it was unforgettable. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <strong>Aileen & Chris</strong><br>
+            <span>Stayed in June 2024</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card-controls">
+        <button onclick="prevTestimonialCard()">‹</button>
+        <button onclick="nextTestimonialCard()">›</button>
+      </div>
+    </div>
+
+    <!-- Get in Touch Form -->
+<div class="contact-form-box">
+  <h2 class="section-title">Get in Touch With Us</h2>
+  <form class="contact-form" action="https://formspree.io/f/mdkddvzz" method="POST">
+    <div class="form-group">
+      <label for="guest-name">Full Name</label>
+      <input type="text" id="guest-name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="guest-email">Email</label>
+      <input type="email" id="guest-email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="guest-message">Message</label>
+      <textarea id="guest-message" name="message" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-resort btn-full">Send Message</button>
+  </form>
+</div>
+
+
+
+  
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section animate-fade-in">
+                <h3>Experience</h3>
+                <ul>
+                    <li><a href="#" class="footer-link">Local Activities</a></li>
+                    <li><a href="#" class="footer-link">Offers & Promotions</a></li>
+                    <li><a href="#" class="footer-link">Restaurant Menu</a></li>
+                </ul>
+            </div>
+            <div class="footer-section animate-fade-in" style="animation-delay: 0.2s">
+                <h3>Janjos Place and Resort</h3>
+                <ul>
+                    <li><a href="AboutUs.html" class="footer-link">About Us</a></li>
+                    <li><a href="#" class="footer-link">Contact Us</a></li>
+                    <li><a href="#" class="footer-link">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section animate-fade-in" style="animation-delay: 0.4s">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-link hover-bounce">
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link hover-bounce">
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Janjos Place and Resort. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Success Toast -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <span class="toast-message"></span>
+            <button class="toast-close" onclick="hideToast()">&times;</button>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+   <script src="signup.js"></script>
+</body>
+</html>
